@@ -123,7 +123,7 @@ let show
                 <title>lámwyrhta</title>
             </head>
             <body>
-                <h1>Lámwyrhta :: Clay Works</h1>
+                <h1>Lámwyrhta</h1>
                 <div id="in-progress-works">
                   <h2>In Progress</h2>
                     ${Prelude.Text.concatMapSep
