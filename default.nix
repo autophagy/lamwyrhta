@@ -27,7 +27,7 @@ in pkgs.stdenv.mkDerivation {
    export DHALL_PRELUDE=${preludeSrc}/Prelude/package.dhall
    echo $DHALL_PRELUDE
    buildDir=$(pwd)
-   dhall text --file $src/works.dhall --output $buildDir/index.html
+   dhall text --file $src/template.dhall --output $buildDir/index.html
   '';
 
   installPhase = ''
