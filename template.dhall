@@ -67,7 +67,7 @@ let showInProgressWork
               ${work.brief}
             </div>
             <div class="state">
-              ${showState work.state.state} since ${work.state.since}
+              ${showClay work.clay} clay. ${showState work.state.state} since ${work.state.since}
             </div>
           </div>
         </div>
