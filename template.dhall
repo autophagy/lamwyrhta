@@ -35,6 +35,17 @@ let showState
           }
           s
 
+let showStateCSS
+    : State → Text
+    = λ(s : State) →
+        merge
+          { Working = "working"
+          , Bisque = "bisque"
+          , Glaze = "glaze"
+          , Finished = "finished"
+          }
+          s
+
 let showClay
     : Clay → Text
     = λ(c : Clay) →
@@ -50,7 +61,7 @@ let showInProgressWork
     : Work → Text
     = λ(work : Work) →
         ''
-        <div class="work ${showClay work.clay}">
+        <div class="work ${showStateCSS work.state.state}">
           <div class="detail">
             <div class="brief">
               ${work.brief}

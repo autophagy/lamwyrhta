@@ -111,21 +111,17 @@ footer {
     font-weight: bold;
 }
 
-#in-progress-works .work.White {
+#in-progress-works .work.working {
     background-color: #E2E2E2;
     color: #1B1B1B;
 }
 
-#in-progress-works .work.Speckled {
-    background-color: #463125;
+#in-progress-works .work.bisque {
+    background-color: #29615A;
 }
 
-#in-progress-works .work.Red {
-    background-color: #882323;
-}
-
-#in-progress-works .work.Black {
-    background-color: black;
+#in-progress-works .work.glaze {
+    background-color: #612929;
 }
 
 #finished-works .brief {
