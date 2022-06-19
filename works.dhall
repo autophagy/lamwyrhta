@@ -15,49 +15,49 @@ let Work =
 let works =
       [ { brief = "Angular Vase"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-06-07" }
+        , state = { state = State.Glaze, since = "2022-06-19" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Sake/Tea Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-06-07" }
+        , state = { state = State.Glaze, since = "2022-06-19" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Large Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-06-07" }
+        , state = { state = State.Glaze, since = "2022-06-19" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Large Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-06-07" }
+        , state = { state = State.Glaze, since = "2022-06-19" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Storage Bowl"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-05-31" }
+        , state = { state = State.Glaze, since = "2022-06-19" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-05-31" }
+        , state = { state = State.Glaze, since = "2022-06-19" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Small Jug"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-05-31" }
+        , state = { state = State.Glaze, since = "2022-06-19" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Small Vase"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-05-31" }
+        , state = { state = State.Glaze, since = "2022-06-19" }
         , note = None Text
         , img = None Text
         }
