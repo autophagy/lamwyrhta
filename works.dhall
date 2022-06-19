@@ -63,7 +63,7 @@ let works =
         }
       , { brief = "Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-05-31" }
+        , state = { state = State.Finished, since = "2022-06-18" }
         , note = None Text
         , img = None Text
         }
