@@ -64,8 +64,8 @@ let works =
       , { brief = "Cup"
         , clay = Clay.Speckled
         , state = { state = State.Finished, since = "2022-06-18" }
-        , note = None Text
-        , img = None Text
+        , note = Some "The boundary at the bottom between the edge of the glaze and the clay has a nice, toasted look to it, and I have no idea how I did it."
+        , img = Some "cup-2022-06-18.png"
         }
       , { brief = "Side Dish Plate"
         , clay = Clay.White
