@@ -60,10 +60,19 @@ body {
     line-height: 1.5em;
 }
 
+header {
+    margin-bottom: 1.5em;
+    line-height: 1em;
+}
+
 h1 {
     font-size: 2em;
-    margin-bottom: 1em;
-    line-height: 1em;
+}
+
+#subtitle {
+    opacity: 0.5;
+    margin-top: 0.8em;
+    margin-left: 0.1em;
 }
 
 h2 {
