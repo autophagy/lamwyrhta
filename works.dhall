@@ -13,7 +13,19 @@ let Work =
       }
 
 let works =
-      [ { brief = "Angular Vase"
+      [ { brief = "Tea Cup & Saucer"
+        , clay = Clay.Speckled
+        , state = { state = State.Working, since = "2022-06-22" }
+        , note = None Text
+        , img = None Text
+        }
+      , { brief = "Tea Cup & Saucer"
+        , clay = Clay.Speckled
+        , state = { state = State.Working, since = "2022-06-22" }
+        , note = None Text
+        , img = None Text
+        }
+      , { brief = "Angular Vase"
         , clay = Clay.Speckled
         , state = { state = State.Glaze, since = "2022-06-19" }
         , note = None Text
