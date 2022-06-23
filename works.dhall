@@ -27,50 +27,50 @@ let works =
         }
       , { brief = "Angular Vase"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-06-19" }
+        , state = { state = State.Finished, since = "2022-06-23" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Sake/Tea Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-06-19" }
+        , state = { state = State.Finished, since = "2022-06-23" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Large Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-06-19" }
+        , state = { state = State.Finished, since = "2022-06-23" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Large Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-06-19" }
+        , state = { state = State.Finished, since = "2022-06-23" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Storage Bowl"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-06-19" }
+        , state = { state = State.Finished, since = "2022-06-23" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-06-19" }
+        , state = { state = State.Finished, since = "2022-06-23" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Small Jug"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-06-19" }
+        , state = { state = State.Finished, since = "2022-06-23" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Small Vase"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-06-19" }
-        , note = None Text
+        , state = { state = State.Finished, since = "2022-06-23" }
+        , note = Some "It seems like the toasted look comes about from a very, very thin layer of white glaze being on the clay. For this, and a few following pieces, I tried a new glaze of a single coat of white, where I then sponged it off at the rim. I like the exposed clay aesthetic quite a lot, and might use it more going forward."
         , img = None Text
         }
       , { brief = "Cup"
