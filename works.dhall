@@ -13,21 +13,33 @@ let Work =
       }
 
 let works =
-      [ { brief = "Small Jug"
+      [ { brief = "Vase"
         , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2022-06-26" }
+        , state = { state = State.Working, since = "2022-06-30" }
+        , note = None Text
+        , img = None Text
+        }
+      , { brief = "Small Storage Jar"
+        , clay = Clay.Speckled
+        , state = { state = State.Working, since = "2022-06-30" }
+        , note = None Text
+        , img = None Text
+        }
+      , { brief = "Small Jug"
+        , clay = Clay.Speckled
+        , state = { state = State.Bisque, since = "2022-06-30" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Tea Cup & Saucer"
         , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2022-06-22" }
+        , state = { state = State.Bisque, since = "2022-06-30" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Tea Cup & Saucer"
         , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2022-06-22" }
+        , state = { state = State.Bisque, since = "2022-06-30" }
         , note = None Text
         , img = None Text
         }
