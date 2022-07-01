@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "gitignore": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646480205,
+        "narHash": "sha256-kekOlTlu45vuK2L9nq8iVN17V3sB0WWPqTTW3a2SQG0=",
+        "owner": "hercules-ci",
+        "repo": "gitignore.nix",
+        "rev": "bff2832ec341cf30acb3a4d3e2e7f1f7b590116a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "gitignore.nix",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1656461576,
@@ -15,9 +35,28 @@
         "type": "indirect"
       }
     },
+    "preludeSrc": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1606925772,
+        "narHash": "sha256-inKajh4BoqnwlHp5c3w2tKlc0H5Dg3s7EZKFOPsps+o=",
+        "owner": "dhall-lang",
+        "repo": "dhall-lang",
+        "rev": "2f7d0c28ab96181a003a284a0a68ba5debb2a751",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dhall-lang",
+        "ref": "v20.0.0",
+        "repo": "dhall-lang",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "gitignore": "gitignore",
+        "nixpkgs": "nixpkgs",
+        "preludeSrc": "preludeSrc"
       }
     }
   },

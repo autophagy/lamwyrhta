@@ -1,27 +1,20 @@
 {
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    gitignore = {
+      url = "github:hercules-ci/gitignore.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    preludeSrc = {
+      url = "github:dhall-lang/dhall-lang/v20.0.0";
+      flake = false;
+    };
   };
 
-  outputs = { self, nixpkgs }:
+  outputs = { self, nixpkgs, gitignore, preludeSrc }:
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
-
-      gitignoreSrc = pkgs.fetchFromGitHub {
-        owner = "hercules-ci";
-        repo = "gitignore.nix";
-        rev = "5b9e0ff9d3b551234b4f3eb3983744fa354b17f1";
-        sha256 = "sha256:01l4phiqgw9xgaxr6jr456qmww6kzghqrnbc7aiiww3h6db5vw53";
-      };
-
-      preludeSrc = pkgs.fetchFromGitHub {
-        owner = "dhall-lang";
-        repo = "dhall-lang";
-        rev = "v20.0.0";
-        sha256 = "sha256-inKajh4BoqnwlHp5c3w2tKlc0H5Dg3s7EZKFOPsps+o=";
-      };
-
-      inherit (import gitignoreSrc { inherit (pkgs) lib; }) gitignoreSource;
+      inherit (gitignore.lib) gitignoreSource;
     in
     {
       packages.x86_64-linux.lamwyrhta = pkgs.stdenv.mkDerivation {
