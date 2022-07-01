@@ -44,10 +44,6 @@
         };
 
         packages.default = self.packages.x86_64-linux.lamwyrhta;
-
-        devShells.default = pkgs.mkShell {
-          buildInputs = with pkgs; [ dhall ];
-        };
       }
     );
 }
