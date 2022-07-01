@@ -1,6 +1,10 @@
 {
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    utils = {
+      url = "github:numtide/flake-utils";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     gitignore = {
       url = "github:hercules-ci/gitignore.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -11,38 +15,39 @@
     };
   };
 
-  outputs = { self, nixpkgs, gitignore, preludeSrc }:
-    let
-      pkgs = nixpkgs.legacyPackages.x86_64-linux;
-      inherit (gitignore.lib) gitignoreSource;
-    in
-    {
-      packages.x86_64-linux.lamwyrhta = pkgs.stdenv.mkDerivation {
-        pname = "lamwyrhta";
-        version = "0.1.0";
-        src = gitignoreSource ./.;
+  outputs = { self, nixpkgs, utils, gitignore, preludeSrc }:
+    utils.lib.eachDefaultSystem (system:
+      let pkgs = nixpkgs.legacyPackages.${system};
+        inherit (gitignore.lib) gitignoreSource;
+      in
+      {
+        packages.lamwyrhta = pkgs.stdenv.mkDerivation {
+          pname = "lamwyrhta";
+          version = "0.1.0";
+          src = gitignoreSource ./.;
 
-        buildInputs = [ pkgs.dhall ];
+          buildInputs = [ pkgs.dhall ];
 
-        buildPhase = ''
-          export DHALL_PRELUDE=${preludeSrc}/Prelude/package.dhall
-          echo $DHALL_PRELUDE
-          buildDir=$(pwd)
-          dhall text --file $src/template.dhall --output $buildDir/index.html
-        '';
+          buildPhase = ''
+            export DHALL_PRELUDE=${preludeSrc}/Prelude/package.dhall
+            echo $DHALL_PRELUDE
+            buildDir=$(pwd)
+            dhall text --file $src/template.dhall --output $buildDir/index.html
+          '';
 
-        installPhase = ''
-          mkdir -p $out
-          cp -rf main.css $out
-          cp -rf img $out
-          cp -rf index.html $out
-        '';
-      };
+          installPhase = ''
+            mkdir -p $out
+            cp -rf main.css $out
+            cp -rf img $out
+            cp -rf index.html $out
+          '';
+        };
 
-      packages.x86_64-linux.default = self.packages.x86_64-linux.lamwyrhta;
+        packages.default = self.packages.x86_64-linux.lamwyrhta;
 
-      devShell.x86_64-linux = pkgs.mkShell {
-        buildInputs = with pkgs; [ dhall ];
-      };
-    };
+        devShell = pkgs.mkShell {
+          buildInputs = with pkgs; [ dhall ];
+        };
+      }
+    );
 }
