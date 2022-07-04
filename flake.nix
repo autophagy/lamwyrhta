@@ -38,7 +38,7 @@
           '';
         };
 
-        packages.default = self.packages.x86_64-linux.lamwyrhta;
+        packages.default = self.packages.${system}.lamwyrhta;
       }
     );
 }
