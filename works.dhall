@@ -40,50 +40,50 @@ let works =
       , { brief = "Angular Vase"
         , clay = Clay.Speckled
         , state = { state = State.Finished, since = "2022-06-23" }
-        , note = None Text
-        , img = None Text
+        , note = Some "It seems like the toasted look comes about from exposed clay that isn't close to the bototm. For this, and a few following pieces, I tried a new glaze of a single coat of white, where I then sponged it off at the rim. I like the exposed clay aesthetic quite a lot, and might use it more going forward."
+        , img = Some "angular-vase-2022-06-23.png"
         }
       , { brief = "Sake/Tea Cup"
         , clay = Clay.Speckled
         , state = { state = State.Finished, since = "2022-06-23" }
-        , note = None Text
-        , img = None Text
+        , note = Some "I really flubbed glazing this one. The glaze inside is clumpy and weird and theres a big fingerprint on the outside. It's kinda cute in its own, unintentional way."
+        , img = Some "sake-cup-2022-06-23.png"
         }
       , { brief = "Large Cup"
         , clay = Clay.Speckled
         , state = { state = State.Finished, since = "2022-06-23" }
         , note = None Text
-        , img = None Text
+        , img = Some "large-cup-2-2022-06-23.png"
         }
       , { brief = "Large Cup"
         , clay = Clay.Speckled
         , state = { state = State.Finished, since = "2022-06-23" }
         , note = None Text
-        , img = None Text
+        , img = Some "large-cup-1-2022-06-23.png"
         }
       , { brief = "Storage Bowl"
         , clay = Clay.Speckled
         , state = { state = State.Finished, since = "2022-06-23" }
-        , note = None Text
-        , img = None Text
+        , note = Some "This is a food portion bowl for Sophia. Luckily enough, a full bowl is more or less her exact allowance for a meal."
+        , img = Some "sophia-food-bowl-2022-06-23.png"
         }
       , { brief = "Cup"
         , clay = Clay.Speckled
         , state = { state = State.Finished, since = "2022-06-23" }
         , note = None Text
-        , img = None Text
+        , img = Some "cup-2022-06-23.png"
         }
       , { brief = "Small Jug"
         , clay = Clay.Speckled
         , state = { state = State.Finished, since = "2022-06-23" }
-        , note = None Text
-        , img = None Text
+        , note = Some "Yet another jug that ended up being slightly too narrow to use for an aeropress."
+        , img = Some "jug-2022-06-23.png"
         }
       , { brief = "Small Vase"
         , clay = Clay.Speckled
         , state = { state = State.Finished, since = "2022-06-23" }
-        , note = Some "It seems like the toasted look comes about from a very, very thin layer of white glaze being on the clay. For this, and a few following pieces, I tried a new glaze of a single coat of white, where I then sponged it off at the rim. I like the exposed clay aesthetic quite a lot, and might use it more going forward."
-        , img = None Text
+        , note = Some "The proportions of this are a little weird in a way I don't like. I think with something leafy that hides it, like epipremnum aureum, it will look okay."
+        , img = Some "small-vase-2022-06-23.png"
         }
       , { brief = "Cup"
         , clay = Clay.Speckled
