@@ -5,26 +5,21 @@
       url = "github:numtide/flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    gitignore = {
-      url = "github:hercules-ci/gitignore.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     preludeSrc = {
       url = "github:dhall-lang/dhall-lang/v20.0.0";
       flake = false;
     };
   };
 
-  outputs = { self, nixpkgs, utils, gitignore, preludeSrc }:
+  outputs = { self, nixpkgs, utils, preludeSrc }:
     utils.lib.eachDefaultSystem (system:
       let pkgs = nixpkgs.legacyPackages.${system};
-        inherit (gitignore.lib) gitignoreSource;
       in
       {
         packages.lamwyrhta = pkgs.stdenv.mkDerivation {
           pname = "lamwyrhta";
           version = "0.1.0";
-          src = gitignoreSource ./.;
+          src = ./.;
 
           buildInputs = [ pkgs.dhall ];
 
