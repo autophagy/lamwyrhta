@@ -7,4 +7,4 @@ A small site/tool to track my ongoing ceramic projects, hosted at
 
 To build::
 
-  $ nix-build
+  $ nix build
