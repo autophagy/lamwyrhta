@@ -25,7 +25,6 @@
 
           buildPhase = ''
             export DHALL_PRELUDE=${preludeSrc}/Prelude/package.dhall
-            echo $DHALL_PRELUDE
             buildDir=$(pwd)
             dhall text --file $src/template.dhall --output $buildDir/index.html
           '';
