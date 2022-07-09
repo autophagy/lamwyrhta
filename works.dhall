@@ -15,25 +15,31 @@ let Work =
 let works =
       [ { brief = "Vase"
         , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2022-06-30" }
+        , state = { state = State.Working, since = "2022-07-09" }
+        , note = None Text
+        , img = None Text
+        }
+      , { brief = "Vase"
+        , clay = Clay.Speckled
+        , state = { state = State.Bisque, since = "2022-07-05" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Small Jug"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-06-30" }
+        , state = { state = State.Glaze, since = "2022-07-05" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Tea Cup & Saucer"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-06-30" }
+        , state = { state = State.Glaze, since = "2022-07-05" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Tea Cup & Saucer"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-06-30" }
+        , state = { state = State.Glaze, since = "2022-07-05" }
         , note = None Text
         , img = None Text
         }
