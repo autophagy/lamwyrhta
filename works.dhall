@@ -13,9 +13,9 @@ let Work =
       }
 
 let works =
-      [ { brief = "Vase"
-        , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2022-07-09" }
+      [ { brief = "Makers Mark"
+        , clay = Clay.White
+        , state = { state = State.Working, since = "2022-07-12" }
         , note = None Text
         , img = None Text
         }
@@ -25,23 +25,23 @@ let works =
         , note = None Text
         , img = None Text
         }
-      , { brief = "Small Jug"
+      , { brief = "Aeropress Jug"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-07-05" }
-        , note = None Text
-        , img = None Text
+        , state = { state = State.Finished, since = "2022-07-12" }
+        , note = Some "I finally did it. I finally speared my white whale. I made a jug with a rim the right diameter to fit an aeropress. I can finally sleep."
+        , img = Some "jug-2022-07-12.jpg"
         }
-      , { brief = "Tea Cup & Saucer"
+      , { brief = "Espresso Cup & Saucer"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-07-05" }
+        , state = { state = State.Finished, since = "2022-07-12" }
         , note = None Text
-        , img = None Text
+        , img = Some "cup-2-2022-07-12.jpg"
         }
-      , { brief = "Tea Cup & Saucer"
+      , { brief = "Espresso Cup & Saucer"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-07-05" }
-        , note = None Text
-        , img = None Text
+        , state = { state = State.Finished, since = "2022-07-12" }
+        , note = Some "This cup, and its twin, were an experiment in having an entirely unglazed exterior. The interior and saucers were glazed with a single coat of metallic creme which, coupled with the colour of the clay, gaves it an unexpectedly retro vibe. This was also my first bit of handbuilding, as well as handle attachment, which had no complications or cracks. Really happy with these."
+        , img = Some "cup-1-2022-07-12.jpg"
         }
       , { brief = "Angular Vase"
         , clay = Clay.Speckled
