@@ -4,6 +4,8 @@ let Prelude =
           sha256:21754b84b493b98682e73f64d9d57b18e1ca36a118b81b33d0a243de8455814b
 let W = ./works.dhall
 
+let drv = env:DRV as Text
+
 let State = W.State
 
 let Clay = W.Clay
@@ -148,7 +150,7 @@ let show
                         finishedWorks}
                 </div>
             <footer>
-                <a href="https://github.com/autophagy/lamwyrhta">Github</a> // <a href="https://autophagy.io">Autophagy</a> // DRVOUT
+                <a href="https://github.com/autophagy/lamwyrhta">Github</a> // <a href="https://autophagy.io">Autophagy</a> // ${drv}
             </footer>
             </body>
             </html>

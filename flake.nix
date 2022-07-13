@@ -26,8 +26,9 @@
           buildPhase = ''
             export DHALL_PRELUDE=${preludeSrc}/Prelude/package.dhall
             buildDir=$(pwd)
+
+            export DRV=${placeholder "out"}
             dhall text --file $src/template.dhall --output $buildDir/index.html
-            sed -i 's|DRVOUT|${placeholder "out"}|g' $buildDir/index.html
           '';
 
           installPhase = ''
