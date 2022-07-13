@@ -13,9 +13,15 @@ let Work =
       }
 
 let works =
-      [ { brief = "Makers Mark"
+      [ { brief = "Storage Jar"
+        , clay = Clay.Speckled
+        , state = { state = State.Working, since = "2022-07-13" }
+        , note = None Text
+        , img = None Text
+        }
+      , { brief = "Makers Mark"
         , clay = Clay.White
-        , state = { state = State.Working, since = "2022-07-12" }
+        , state = { state = State.Bisque, since = "2022-07-13" }
         , note = None Text
         , img = None Text
         }
