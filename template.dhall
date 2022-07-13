@@ -148,7 +148,7 @@ let show
                         finishedWorks}
                 </div>
             <footer>
-                <a href="https://github.com/autophagy/lamwyrhta">Github</a> // <a href="https://autophagy.io">Autophagy</a>
+                <a href="https://github.com/autophagy/lamwyrhta">Github</a> // <a href="https://autophagy.io">Autophagy</a> // DRVOUT
             </footer>
             </body>
             </html>
