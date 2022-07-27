@@ -21,13 +21,13 @@ let works =
         }
       , { brief = "Makers Mark"
         , clay = Clay.White
-        , state = { state = State.Bisque, since = "2022-07-13" }
+        , state = { state = State.Finished, since = "2022-07-24" }
         , note = None Text
         , img = None Text
         }
       , { brief = "Vase"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2022-07-13" }
+        , state = { state = State.Finished, since = "2022-07-24" }
         , note = None Text
         , img = None Text
         }
