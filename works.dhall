@@ -13,16 +13,28 @@ let Work =
       }
 
 let works =
-      [ { brief = "Storage Jar"
+      [ { brief = "Tall Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2022-07-16" }
+        , state = { state = State.Working, since = "2023-02-01" }
         , note = None Text
+        , img = None Text
+        }
+      , { brief = "Tall Cup"
+        , clay = Clay.Speckled
+        , state = { state = State.Finished, since = "2023-02-01" }
+        , note = None Text
+        , img = None Text
+        }
+      , { brief = "Conical Vase"
+        , clay = Clay.Speckled
+        , state = { state = State.Finished, since = "2023-01-20" }
+        , note = Some "This was meant to be a storage vessel, but the internal volume was a bit too small and the proportions not quite right. But, it makes for a nice weird vase for vines."
         , img = None Text
         }
       , { brief = "Makers Mark"
         , clay = Clay.White
         , state = { state = State.Finished, since = "2022-07-24" }
-        , note = None Text
+        , note = Some "Came out ok. But my partner got me a real, machined steel makers mark, so this is just a weird little artifact."
         , img = None Text
         }
       , { brief = "Vase"
