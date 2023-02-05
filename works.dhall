@@ -21,7 +21,7 @@ let works =
         }
       , { brief = "Tall Cup"
         , clay = Clay.Speckled
-        , state = { state = State.Finished, since = "2023-02-01" }
+        , state = { state = State.Working, since = "2023-02-01" }
         , note = None Text
         , img = None Text
         }
