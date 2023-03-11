@@ -3,6 +3,7 @@ let Prelude =
       ? https://prelude.dhall-lang.org/v20.0.0/package.dhall
           sha256:21754b84b493b98682e73f64d9d57b18e1ca36a118b81b33d0a243de8455814b
 let W = ./works.dhall
+let A22 = ./2022.dhall
 
 let drv = env:DRV as Text
 
@@ -11,6 +12,8 @@ let State = W.State
 let Clay = W.Clay
 
 let Work = W.Work
+
+let Archive = { year : Text, works : List Work }
 
 let compose = Prelude.Function.compose
 
@@ -96,6 +99,20 @@ let showFinishedWork
         </div>
         ''
 
+let showArchive
+  : Archive → Text
+  = λ(archive: Archive) →
+      ''
+      <div class="archive">
+        <h2>${archive.year}</h2>
+        ${Prelude.Text.concatMapSep
+          "\n"
+          Work
+          showFinishedWork
+          archive.works}
+      </div>
+      ''
+
 let isInProgress
     : Work → Bool
     = λ(work : Work) →
@@ -104,8 +121,9 @@ let isInProgress
           work.state.state
 
 let show
-    : List Work → Text
-    = λ(works : List Work) →
+    : List Work → List Archive → Text
+    = λ(works : List Work) → λ(archives : List Archive) →
+
         let inProgressWorks = Prelude.List.filter Work isInProgress works
 
         let finishedWorks =
@@ -148,6 +166,11 @@ let show
                         Work
                         showFinishedWork
                         finishedWorks}
+                ${Prelude.Text.concatMapSep
+                    "\n"
+                    Archive
+                    showArchive
+                    archives}
                 </div>
             <footer>
                 <a href="https://github.com/autophagy/lamwyrhta">Github</a> // <a href="https://autophagy.io">Autophagy</a> // ${drv}
@@ -156,4 +179,4 @@ let show
             </html>
             ''
 
-in  show W.works
+in  show W.works [A22.archive]
