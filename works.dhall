@@ -21,7 +21,7 @@ let works =
         }
         , { brief = "Pasta Bowl"
         , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2023-03-08" }
+        , state = { state = State.Bisque, since = "2023-03-19" }
         , note = Some "Trying to work on increasing the size of my works, above just cups. Bitten by not using a bat for this one."
         , img = None Text
         }
