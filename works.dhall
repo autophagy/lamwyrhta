@@ -15,11 +15,11 @@ let Work =
 let works =
       [ { brief = "Set of 5 Coasters"
         , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2023-03-11" }
+        , state = { state = State.Bisque, since = "2023-03-26" }
         , note = None Text
         , img = None Text
         }
-        , { brief = "Pasta Bowl"
+      , { brief = "Pasta Bowl"
         , clay = Clay.Speckled
         , state = { state = State.Bisque, since = "2023-03-19" }
         , note = Some "Trying to work on increasing the size of my works, above just cups. Bitten by not using a bat for this one."
