@@ -1,10 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    utils = {
-      url = "github:numtide/flake-utils";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    utils.url = "github:numtide/flake-utils";
     preludeSrc = {
       url = "github:dhall-lang/dhall-lang/v20.0.0";
       flake = false;
