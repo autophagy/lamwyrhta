@@ -25,11 +25,11 @@ let works =
         , note = None Text
         , img = None Text
         }
-      , { brief = "Pasta Bowl"
+      , { brief = "Desert Bowl"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2023-03-19" }
-        , note = Some "Trying to work on increasing the size of my works, above just cups. Bitten by not using a bat for this one."
-        , img = None Text
+        , state = { state = State.Finished, since = "2023-03-19" }
+        , note = Some "Trying to work on increasing the size of my works, above just cups. Bitten by not using a bat for this one. Still too small for its intended purpose, but makes a cute desert bowl."
+        , img = Some "desert-bowl-2023-04-02.jpg"
         }
       , { brief = "Conical Vase"
         , clay = Clay.Speckled
