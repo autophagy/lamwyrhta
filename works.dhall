@@ -15,7 +15,7 @@ let Work =
 let works =
       [ { brief = "Set of 2 Dinner Plates"
         , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2023-04-05" }
+        , state = { state = State.Bisque, since = "2023-04-19" }
         , note = None Text
         , img = None Text
         }
@@ -27,9 +27,9 @@ let works =
         }
       , { brief = "Set of 5 Coasters"
         , clay = Clay.Speckled
-        , state = { state = State.Bisque, since = "2023-03-26" }
-        , note = None Text
-        , img = None Text
+        , state = { state = State.Finished, since = "2023-04-16" }
+        , note = Some "My first use of engobe to inscribe the sigils onto these coasters. The sigils themselves were designed via a collaboration with GPT4 to represent human/machinic intelligence and collaboration."
+        , img = Some "set-of-coasters-2023-04-16.png"
         }
       , { brief = "Desert Bowl"
         , clay = Clay.Speckled
