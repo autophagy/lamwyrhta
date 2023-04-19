@@ -27,7 +27,7 @@ let works =
         }
       , { brief = "Lidded Storage Jar"
         , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2023-04-01" }
+        , state = { state = State.Bisque, since = "2023-04-19" }
         , note = None Text
         , img = None Text
         }
