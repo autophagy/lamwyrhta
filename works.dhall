@@ -15,7 +15,7 @@ let Work =
 let works =
       [ { brief = "Museli Bowl"
         , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2023-04-19" }
+        , state = { state = State.Working, since = "2023-04-30" }
         , note = None Text
         , img = None Text
         }
@@ -27,9 +27,9 @@ let works =
         }
       , { brief = "Lidded Storage Jar"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2023-04-26" }
+        , state = { state = State.Finished, since = "2023-04-30" }
         , note = None Text
-        , img = None Text
+        , img = Some "sugar-jar-2023-04-30.jpg"
         }
       , { brief = "Set of 5 Coasters"
         , clay = Clay.Speckled
