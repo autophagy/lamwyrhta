@@ -13,7 +13,14 @@ let Work =
       }
 
 let works =
-      [ { brief = "Museli Bowl"
+      [
+        { brief = "Salt Pig/s"
+        , clay = Clay.Speckled
+        , state = { state = State.Working, since = "2023-05-03" }
+        , note = Some "Making on request for a friend. Throwing 2 different sizes to see what works best."
+        , img = None Text
+        }
+      , { brief = "Museli Bowl"
         , clay = Clay.Speckled
         , state = { state = State.Working, since = "2023-04-30" }
         , note = None Text
