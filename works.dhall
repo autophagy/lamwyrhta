@@ -14,15 +14,21 @@ let Work =
 
 let works =
       [
-        { brief = "Set of 2 Coffee Cups"
+        { brief = "Pasta Bowl"
+        , clay = Clay.Speckled
+        , state = { state = State.Working, since = "2023-05-14" }
+        , note = None Text
+        , img = None Text
+        }
+      , { brief = "Set of 2 Coffee Cups"
         , clay = Clay.Speckled
         , state = { state = State.Working, since = "2023-05-06" }
         , note = None Text
         , img = None Text
         }
-      , { brief = "Salt Pig/s"
+      , { brief = "Salt Pig"
         , clay = Clay.Speckled
-        , state = { state = State.Working, since = "2023-05-03" }
+        , state = { state = State.Bisque, since = "2023-05-14" }
         , note = Some "Making on request for a friend. Throwing 2 different sizes to see what works best."
         , img = None Text
         }
@@ -34,7 +40,7 @@ let works =
         }
       , { brief = "Set of 2 Dinner Plates"
         , clay = Clay.Speckled
-        , state = { state = State.Glaze, since = "2023-05-06" }
+        , state = { state = State.Finished, since = "2023-05-14" }
         , note = None Text
         , img = None Text
         }
